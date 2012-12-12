@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache">  
-<link rel="stylesheet" type="text/css" href="kitchensink/icons.css" />  
-<link rel="stylesheet" type="text/css" href="kitchensink/jq.ui.less.css" title="default"/>
+<link rel="stylesheet" type="text/css" href="../jqmobile/kitchensink/icons.css" />  
+<link rel="stylesheet" type="text/css" href="../jqmobile/kitchensink/jq.ui.less.css" title="default"/>
 
 <style>
 	.scrollBar{background:white;} 
@@ -15,12 +15,12 @@
 	.jqmscrollBar {background:white !important;}	
 </style> 
  
-<script type="text/javascript" charset="utf-8" src="./jq.mobi.js"></script> 
+<script type="text/javascript" charset="utf-8" src="../jqmobile/jq.mobi.js"></script> 
 <!-- include jq.desktopBrowsers.js on desktop browsers only -->
 <script> 
 if(!((window.DocumentTouch&&document instanceof DocumentTouch)||'ontouchstart' in window)){
 	var script=document.createElement("script");
-	script.src="plugins/jq.desktopBrowsers.js";
+	script.src="../jqmobile/plugins/jq.desktopBrowsers.js";
 	var tag=$("head").append(script);
 	if(!$.os.ie){ 
 	}
@@ -55,12 +55,12 @@ oldElem=document.getElementsByTagName("link")[0];
 
 </script>
  
-<script type="text/javascript" charset="utf-8" src="./ui/jq.ui.js"></script> 
+<script type="text/javascript" charset="utf-8" src="../jqmobile/ui/jq.ui.js"></script> 
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script> 
 
 <script type="text/javascript">
     /* This function runs once the page is loaded, but appMobi is not yet active */
-	var webRoot="./kitchensink/";
+	var webRoot="../jqmobile/kitchensink/";
 	$.ui.autoLaunch=true;
     $.ui.openLinksNewTab=false;
     $.ui.resetScrollers=false;
